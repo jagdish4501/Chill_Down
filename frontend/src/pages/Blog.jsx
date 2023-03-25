@@ -15,7 +15,7 @@ const Blog = () => {
                    </h3>
                 </Col>
                  {
-                    BLOG__DATA.slice(0, 8).map((item) => (
+                    BLOG__DATA.slice(0, 9).map((item) => (
                         <Col lg="3" md="4" sm="6" key={item.id} className="mb-4">
                             <BlogCard item={item} />
                             
