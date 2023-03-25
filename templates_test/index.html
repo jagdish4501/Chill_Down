@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <!-- <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'> -->
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+  <div class="login" class="scrollable">
+    <h1>Predict Salary Analysis</h1>
+
+    <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}" method="post">
+      <input type="text" name="experience1" placeholder="Experience" required="required" />
+      <input type="text" name="test_score2" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score3" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score4" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score5" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score6" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score7" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score8" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score9" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score10" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score11" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score12" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score13" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score14" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score15" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score16" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score17" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score18" placeholder="Test Score" required="required" />
+      <input type="text" name="test_score19" placeholder="Test Score" required="required" />
+      <input type="text" name="interview_score" placeholder="Interview Score" required="required" />
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+    <br>
+    <br>
+    {{ prediction_text }}
+    <br>
+    <!-- {{responsible_atribute_for_stress}} -->
+    <ul>
+      {% for fruit in responsible_atribute_for_stress %}
+      <li>{{ fruit }}</li>
+      {% endfor %}
+    </ul>
+
+  </div>
+
+
+</body>
+
+</html>
