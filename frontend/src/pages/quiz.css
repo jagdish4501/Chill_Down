@@ -1,0 +1,22 @@
+*{
+    background-color: black;
+    color: white;
+}
+
+label{
+    color: white;
+}
+.form__input{
+margin: 200px;
+
+}
+.form-card{
+    height: 500px;
+    width: 400px;
+    display: inline-block;
+    margin: 30px;
+    margin-bottom: 80px;
+    border: 2px solid red;
+}
+
+
