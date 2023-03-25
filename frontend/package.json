@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "Mental_Health_Website",
+=======
+  "name": "CHill_Down",
+>>>>>>> c1c256a64d044ef97c778db33cabc2c9e56a1dcd
   "version": "0.1.0",
   "private": true,
   "dependencies": {
