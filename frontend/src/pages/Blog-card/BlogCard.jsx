@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import "./blog-card.css";
+// import './blog-card.css'
 
 // import Modal from "../Modal/Modal";
  
