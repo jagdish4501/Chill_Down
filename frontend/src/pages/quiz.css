@@ -11,12 +11,19 @@ margin: 200px;
 
 }
 .form-card{
-    height: 500px;
+    /* height: 500px; */
     width: 400px;
     display: inline-block;
     margin: 30px;
-    margin-bottom: 80px;
-    border: 2px solid red;
+    /* margin-bottom: 80px; */
+    margin-top: 80px;
+    border: 2px solid rgb(133, 8, 158);
+    border-radius: 10px;
+    padding: 1%;
 }
 
 
+.submit-btn{
+    display: inline-block;
+ 
+}
