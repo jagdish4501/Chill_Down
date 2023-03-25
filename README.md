@@ -17,5 +17,5 @@ In our project we are preparing a ML model that predicts the level of stress an 
 - Giving Personalized Solutions accordingly
 - Real life motivational stories that connect the user’s sentiments (recommending system)
 - For Critical Users(highly stressed) we recommend Psychologists.
-- Chatbot for general Queries related to mental health.
+- Chatbot for general Queries related to mental health of user.
 
