@@ -38,6 +38,11 @@ Attribute = {
     19: "WORK_LIFE_BAL"}
 
 
+@app.route('/form')
+def form():
+    return render_template('form.html')
+
+
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -63,7 +68,7 @@ def predict():
     for idx in range(len(responsible_idx)):
         local_blog.append(blog['blog'][prediction_list[0]]
                           [responsible_idx[idx]])
-    return render_template('index.html', prediction_text='Stress level $ {}'.format(prediction_list), responsible_atribute_for_stress=local_blog)
+    return render_template('blog.html', prediction_text='Stress level $ {}'.format(prediction_list), responsible_atribute_for_stress=local_blog)
 
 
 @app.route('/predict_api', methods=['POST'])

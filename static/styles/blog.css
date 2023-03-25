@@ -1,7 +1,7 @@
 body {
     margin: 20px;
-    padding: 10px;
+    padding: 0px;
     box-sizing: border-box;
     background: linear-gradient(-90deg, #2e72ed, #e5a1ed);
     font-family: cursive;
-}
+} 
