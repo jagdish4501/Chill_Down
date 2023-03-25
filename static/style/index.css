@@ -1,5 +1,27 @@
-
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: linear-gradient(-90deg, #2e72ed, #e5a1ed);
+    font-family: cursive;
+}
 
 .route{
+    margin: 30px;
+}
+.headline{
+    display: inline;
+    color: green;
+   
+}
+img{
+    width: 800px;
+    height: 600px;
+
+    margin-left: 900px;
+    
+}
+
+.headline{
     margin: 30px;
 }
