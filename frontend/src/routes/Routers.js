@@ -8,7 +8,8 @@ import Home from "../pages/Home"
 import Market from "../pages/Market"
 import Create from "../pages/Create"
 import Contact from "../pages/Contact"
-import  Quiz from '../pages/Quiz'
+import Quiz from '../pages/Quiz'
+import Blog from  '../pages/Blog'
 // import SellerProfile from "../pages/SellerProfile"
 // import EditProfile from "../pages/EditProfile"
 // import Wallet from "../pages/Wallet"
@@ -25,11 +26,11 @@ const Routers = () => {
     <Route path='/contact' element={<Contact />} />
     <Route path='/quiz' element={<Quiz/>} />
 {/* <Route path='/edit-profile' element = {<EditProfile/>} />
-<Route path='/seller-profile' element = {<SellerProfile/>} />
-<Route path='/wallet' element = {<Wallet/>} />
-<Route path='/market/:id' element = {<NFTDetails/>} /> */}
+<Route path='/seller-profile' element = {<SellerProfile/>} /> */}
+<Route path='/blog' element = {<Blog/>} />
+{/* <Route path='/market/:id' element = {<NFTDetails/>} /> */}
  
-  </Routes>
+  </Routes> 
   );
 };
 

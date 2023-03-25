@@ -13,7 +13,7 @@ const NAV__LINKS = [
     display:'About',
     url:'/market'
   },
-  {
+  { 
     display:'Contact-us',
     url:'/create'
   },
@@ -24,7 +24,8 @@ const NAV__LINKS = [
   {
     display:'Signup',
     url:'/signup'
-  }
+  },
+  
 
 ];
 
@@ -41,7 +42,7 @@ const Header = () => {
       }
     });
       return () => {
-        window.removeEventListener('scroll')
+        window.removeEventListener('scroll',null)
       };
 
   }, []);
@@ -54,7 +55,7 @@ const Header = () => {
         <span>
         <i class="ri-mental-health-fill"></i>
         </span> 
-          Man-Shukh
+         Chill Down
       </h2>
     </div>
 
@@ -78,7 +79,7 @@ const Header = () => {
   <button className='btn d-flex gap-2 align-items-center'>
           <span><i class="ri-booklet-line"></i>
       </span> 
-    <Link to="/wallet"> Blogs </Link> 
+    <Link to="/blog"> Blogs </Link> 
      </button>
      
     <span className='mobile__menu'><i className="ri-menu-line"></i></span>

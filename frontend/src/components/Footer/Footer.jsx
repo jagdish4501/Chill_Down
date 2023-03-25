@@ -10,7 +10,7 @@ const MY__ACCOUNT = [
     display: "Author Profile",
     url: "/seller-profile",
   }, 
-  {
+  { 
     display: "Create Item",
     url: "/create",
   },
@@ -74,7 +74,7 @@ const Footer = () => {
                   <span>
                     <i className="ri-mental-health-fill"></i>
                   </span>
-                  Man Shukh
+                Chill Down
                 </h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab

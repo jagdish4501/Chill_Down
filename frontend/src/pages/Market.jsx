@@ -10,7 +10,7 @@ const Market = () => {
     <>
       <CommonSection title={"MatketPlace"} />
 
-      <section>
+      <section> 
         <Container>
           <Row>
             <Col lg="12" className="mb-5">

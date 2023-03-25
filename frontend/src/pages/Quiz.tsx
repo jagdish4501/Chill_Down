@@ -4,8 +4,8 @@ import "./quiz.css"
 
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
-
-const Quiz = () => {
+ 
+const Quiz = () => { 
 
   const [firstName, setFirstName] = useState("")
    const [lastName, setLastName] = useState("")
@@ -132,6 +132,11 @@ const Quiz = () => {
 
   return (
     <div className='form__input'>
+      <div className="headline">
+        <h1>Let's Predict your stress level</h1>
+        <h5>It wouldn’t take much time to fill this form and be honest it is for you</h5>
+      </div>
+
       <Form inline onSubmit={onSubmitHandler}>
         <div className='form-card'>
    <FormGroup   > <Label  htmlFor="first_name">First Name</Label>
@@ -146,13 +151,13 @@ const Quiz = () => {
         
        <FormGroup><Label className='Label' htmlFor="places-visited">How many new places do you visit?</Label>
         <Input id="places-visited" onChange={(e) => inputChangeHandler(setAge, e)} type="number" /> </FormGroup>
+       <FormGroup><Label className='Label' htmlFor="core-circle">How many people are very close to you?</Label>
+    <Input id="core-circle" onChange={(e) => inputChangeHandler(setAge, e)} type="number" /> </FormGroup>
+     
         </div>
         <div className='form-card'>
 
        
-       <FormGroup><Label className='Label' htmlFor="core-circle">How many people are very close to you?</Label>
-    <Input id="core-circle" onChange={(e) => inputChangeHandler(setAge, e)} type="number" /> </FormGroup>
-     
    <FormGroup><Label className='Label' htmlFor="supporting-other">How many people do you help achieve a better life?</Label>
     <Input id="supporting-other" onChange={(e) => inputChangeHandler(setAge, e)} type="number" /> </FormGroup>
     
@@ -163,11 +168,11 @@ const Quiz = () => {
     <Input id="achievement" onChange={(e) => inputChangeHandler(setAge, e)} type="number" /> </FormGroup>
    <FormGroup><Label className='Label' htmlFor="donation">How many times do you donate your time or money to good causes?</Label>
     <Input id="donation" onChange={(e) => inputChangeHandler(setAge, e)} type="number" /> </FormGroup>
-    </div>
-    <div className='form-card'>
    <FormGroup><Label className='Label' htmlFor="bmi-range">What is your body mass index (bmi) range?</Label>
     <Input id="bmi-range" onChange={(e) => inputChangeHandler(setAge, e)} type="number" /> </FormGroup>
    
+    </div>
+    <div className='form-card'>
    <FormGroup><Label className='Label' htmlFor="todo-completed">How well do you complete your weekly to-do lists?</Label>
     <Input id="todo-completed" onChange={(e) => inputChangeHandler(setAge, e)} type="number" /> </FormGroup>
     
@@ -179,11 +184,11 @@ const Quiz = () => {
     
    <FormGroup><Label className='Label' htmlFor="liv-vision">For how many years ahead is your life vision very clear for?</Label>
     <Input id="liv-vision" onChange={(e) => inputChangeHandler(setAge, e)} type="number" /> </FormGroup>
-        </div>
-        <div className='form-card'>
    <FormGroup><Label className='Label' htmlFor="sleep-hours">About how long do you typically sleep?</Label>
     <Input id="sleep-hours" onChange={(e) => inputChangeHandler(setAge, e)} type="number" /> </FormGroup>
     
+        </div>
+        <div className='form-card'>
    <FormGroup><Label className='Label' htmlFor="lost-vacation">How many days of vacation do you typically lose every year ?</Label>
     <Input id="lost-vacation" onChange={(e) => inputChangeHandler(setAge, e)} type="number" /> </FormGroup>
     
@@ -195,11 +200,11 @@ const Quiz = () => {
     
    <FormGroup><Label className='Label' htmlFor="personal-awards">How many recognitions have you received in your life?</Label>
     <Input id="personal-awards" onChange={(e) => inputChangeHandler(setAge, e)} type="number" /> </FormGroup>
-        </div>
-        <div className='form-card'>
    <FormGroup><Label className='Label' htmlFor="time-for-passion">How many hours do you spend everyday doing what you are passionate about?</Label>
     <Input id="time-for-passion" onChange={(e) => inputChangeHandler(setAge, e)} type="number" /> </FormGroup>
     
+        </div>
+        <div className='form-card'>
    <FormGroup><Label className='Label' htmlFor="weekly-meditation">In a typical week, how many times do you have the opportunity to think about yourself?</Label>
     <Input id="weekly-meditation" onChange={(e) => inputChangeHandler(setAge, e)} type="number" /> </FormGroup>
     
@@ -209,8 +214,9 @@ const Quiz = () => {
    <FormGroup><Label className='Label' htmlFor="gender">Male or female</Label>
     <Input id="gender" onChange={(e) => inputChangeHandler(setGender, e)} type="number" /> </FormGroup>
     
-
-          <input type="submit" />
+<div className="submit-btn">
+            <Input type="submit" />
+            </div>
           </div>
       </Form>
       </div>
