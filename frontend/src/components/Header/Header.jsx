@@ -11,11 +11,11 @@ const NAV__LINKS = [
   },
   {
     display:'About',
-    url:'/market'
+    url:'/about'
   },
   { 
     display:'Contact-us',
-    url:'/create'
+    url:'/contact'
   },
   {
     display:'Login',
