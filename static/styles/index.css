@@ -10,13 +10,13 @@ body {
     margin: 30px;
 }
 .headline{
-    display: inline;
+    display: inline-block;
     color: green;
    
 }
 img{
-    width: 800px;
-    height: 600px;
+    display: inline-block;
+    
 
     margin-left: 900px;
     
@@ -24,4 +24,9 @@ img{
 
 .headline{
     margin: 30px;
+}
+div.image{
+    width: 80px;
+    height: 60px;
+    border: 2px solid red;
 }
