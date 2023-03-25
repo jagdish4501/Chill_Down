@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Child-Down</title>
+  <title>Chill-Down</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../static/style/index.css">
@@ -46,15 +46,19 @@
   </div>
 </nav>
 <div>
+
+<div class="image">
+  <img src="../Resources/home2.png" alt="">
+</div>
 <div class="headline">
-<h1>Know Your Mental Health... lorem</h1>
-</div>
-<img src="../Resources/home2.jpg" alt="">
+  <h1>Know Your Mental Health...</h1>
+  </div>
 
 </div>
 
 
-<div class="route">
+<div class="route" style="margin: 30px ;">
+  <h4>Give a short quiz to analyze your mental health</h4>
   <a href="./form.html">
 <button type="button" class="btn btn-lg btn-primary" onclick="">Test Yourself</button>
 </a>
@@ -62,12 +66,57 @@
     <button type="button" class="btn btn-secondary btn-lg" onclick="">Explore</button>
   </a>
 </div>
+
+<div class="route" style="margin: 30px ;">
+  <h5>Want a Quick Assessment? Upload your Conversation:</h5>
+  <form action="/analyse.html">
+    <p style="color:blue" for="w3review">Type here:</p>
+    <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<div class="route" style="margin: 30px ;">
+  <h5> Upload your Audio:</h5>
+  <button onclick="startRecording()">Start Recording</button>
+<button onclick="stopRecording()">Stop Recording</button>
+
+<audio id="recordedAudio" controls></audio>
+
+<script>
+  let recordedChunks = [];
+
+  function startRecording() {
+    recordedChunks = [];
+
+    navigator.mediaDevices.getUserMedia({audio: true})
+      .then(stream => {
+        const mediaRecorder = new MediaRecorder(stream);
+
+        mediaRecorder.addEventListener("dataavailable", event => {
+          recordedChunks.push(event.data);
+        });
+
+        mediaRecorder.addEventListener("stop", () => {
+          const recordedBlob = new Blob(recordedChunks, { type: "audio/ogg; codecs=opus" });
+          const recordedAudio = document.getElementById("recordedAudio");
+          recordedAudio.src = URL.createObjectURL(recordedBlob);
+        });
+
+        mediaRecorder.start();
+      });
+  }
+
+  function stopRecording() {
+    const mediaRecorder = new MediaRecorder(stream);
+    mediaRecorder.stop();
+  }
+</script>
+
+</div>
     
 
-<div>
-  <div>soko</div>
-  <div>nsid</div>
-</div>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -8,47 +8,55 @@
   <title>Child-Down</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="../static/style/form.css">
+  <!-- <link rel="stylesheet" href="../static/style/form.css"> -->
 </head>
 
 <body>
 
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Child-Down</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light"  style="background: linear-gradient(120deg, #4b79cb, #e5a1ed)">
+    <a class="navbar-brand" href="#">
+      <i class="bi bi-heart-pulse-fill"></i>
+      Chill-Down
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
+      <li class="nav-item active">
+          <a class="nav-link " href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+     
+        <li class="nav-item active ">
+          <a class="nav-link" href="./about.html">About</a>
+        </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="./contact us">Contact-us</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="./login">Login</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact-us</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="./signup">Signup</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Signup</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="./blog.html">Blogs</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <div class="heading">
+    <br>
+    <br>
     <h3>Let's Predict your stress level
     </h3>
     <h5>It wouldn’t take much time to fill this form and be honest it is for you
     </h5>
   </div>
 
-  <div class="form">
+  <div class="form" style="width: 1200px; margin: 100px;">
     <form>
       <div class="row">
         <div class="col">
@@ -175,11 +183,7 @@
       </div>
       <div class="row">
 
-        <div class="col">
-
-          <label for="email">Male or female</label>
-          <input type="number" class="form-control" placeholder=" ">
-        </div>
+       
         <input class="btn btn-primary" type="submit" value="Submit">
       </div>
 
