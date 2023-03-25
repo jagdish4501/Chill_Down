@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from "react"
+import { useState } from 'react'
 import "./quiz.css"
 
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
