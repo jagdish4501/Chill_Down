@@ -6,12 +6,13 @@
 # Chill_Down
 
  Team Name: **init\_0**
- Jagdish Kumar
- Priyansh Verma 
- Ashish Nishad
- Abhi Bhaskar 
+ <h5>Jagdish Kumar</h5>
+<h5>Priyansh Verma </h5>
+<h5>Ashish Nishad</h5>
+<h5>Abhi Bhaskar </h5>
 
 Video link : https://drive.google.com/file/d/13gdsnkh4SijeM_z0srKVJ8gDTGiYQzFy/view?usp=drivesdk
+<hr>
 PPT link: https://drive.google.com/file/d/1ra3ic2SV5KAF3FX3yLBfMA0uyVq2sbkb/view?usp=drivesdk
 
  **Project name: Chill-Down**
