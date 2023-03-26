@@ -1,5 +1,8 @@
-# Chill_Down
+
 **Hack 36 6.0**
+![built-at-hack](https://user-images.githubusercontent.com/76893116/227752806-46a85acd-c288-432f-904f-760db5b42e57.jpg)
+
+# Chill_Down
 
  Team Name: **init\_0**
 
@@ -19,3 +22,4 @@ In our project we  are preparing a ML model that predicts the level of stress an
 - For Critical Users(highly stressed) we recommend Psychologists.
 - Chatbot for general Queries related to mental health of user.
 
+![built-at-hack](https://user-images.githubusercontent.com/76893116/227752816-747b9c73-ddcb-40eb-8e90-ff76edde839f.jpg)
