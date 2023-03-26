@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great</title>
+    <link rel="stylesheet" type="text/css" , href="{{url_for('static', filename='styles/desc.css')}}">
+</head>
+
+<body>
+    <div style="display:flexbox; padding: auto;">
+        <form action="{{ url_for('describe')}}" method="post">
+            <h3>Tell me Abouts You</h3>
+            <!-- <br> -->
+            <input type="text" name="situation" placeholder="Write Abouts Yourself" required="required"
+                style="width: 700px; height: 40px;font-size: medium;">
+            <br>
+            <button type="submit" class="btn">Predict</button>
+        </form>
+    </div>
+</body>
+
+</html>

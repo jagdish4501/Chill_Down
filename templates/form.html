@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>ML API</title>
+  <title>Great</title>
   <link rel="stylesheet" type="text/css" , href="{{url_for('static', filename='styles/form.css')}}">
 </head>
 
@@ -18,81 +18,87 @@
 
     <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}" method="post">
-      <label for="email">How many fruits or vegetables do you eat everyday?:</label>
-      <br>
+      <label for="email">Q1. How many fruits or vegetables do you eat everyday?:</label>
+      <!-- <br> -->
       <input type="text" name="FRUITS_VEGGIES" placeholder="0-5" required="required">
-      <label for="email">How many new places do you visit?</label>
       <br>
+      <label for="email">Q2. How many new places do you visit?</label>
+      <!-- <br> -->
       <input type="text" name="PLACES_VISITED" placeholder="0-10" required="required">
-      <label for="email">How many people are very close to you?</label>
       <br>
+      <label for="email">Q3. How many people are very close to you?</label>
+      <!-- <br> -->
       <input type="text" name="CORE_CIRCLE" placeholder="0-10" required="required">
-      <label for="email">How many people do you help achieve a better life?</label>
       <br>
+      <label for="email">Q4. How many people do you help achieve a better life?</label>
+      <!-- <br> -->
       <input type="text" name="SUPPORTING_OTHERS" placeholder="0-10" required="required">
-
-      <label for="email">With how many people do you interact with during a typical day?</label>
       <br>
+      <label for="email">Q5. With how many people do you interact with during a typical day?</label>
+      <!-- <br> -->
       <input type="text" name="SOCIAL_NETWORK" placeholder="0-10" required="required">
-      <label for="email">How many remarkable achievements are you proud of?</label>
       <br>
+      <label for="email">Q6. How many remarkable achievements are you proud of?</label>
+      <!-- <br> -->
       <input type="text" name="ACHIEVEMENT" placeholder="0-10" required="required">
-      <label for="email">How many times do you donate your time or money to good causes?</label>
       <br>
+      <label for="email">Q7. How many times do you donate your time or money to good causes?</label>
+      <!-- <br> -->
       <input type="text" name="DONATION" placeholder="0-5" required="required">
+      <br>
       <label for="email">What is your body mass index (bmi) range?</label>
-      <br>
+      <!-- <br> -->
       <input type="text" name="BMI_RANGE" placeholder="1-2" required="required">
+      <br>
       <label for="email">How well do you complete your weekly to-do lists?</label>
-      <br>
+      <!-- <br> -->
       <input type="text" name="TODO_COMPLETED" placeholder="0-10" required="required">
+      <br>
       <label for="email">In a typical day, how many hours do you experience "Flow"?</label>
-      <br>
+      <!-- <br> -->
       <input type="text" name="FLOW" placeholder="0-10" required="required">
+      <br>
       <label for="email">How many steps (in thousands) do you typically walk everyday?</label>
-      <br>
+      <!-- <br> -->
       <input type="text" name="DAILY_STEPS" placeholder="1-10" required="required">
+      <br>
       <label for="email">For how many years ahead is your life vision very clear for?</label>
-      <br>
+      <!-- <br> -->
       <input type="text" name="LIVE_VISION" placeholder="0-10" required="required">
+      <br>
       <label for="email">About how long do you typically sleep?:</label>
-      <br>
+      <!-- <br> -->
       <input type="text" name="SLEEP_HOURS" placeholder="1-10" required="required">
+      <br>
       <label for="email">How many days of vacation do you typically lose every year ?:</label>
-      <br>
+      <!-- <br> -->
       <input type="text" name="LOST_VACATION" placeholder="0-10" required="required">
+      <br>
       <label for="email">How often do you shout or sulk at somebody?:</label>
-      <br>
+      <!-- <br> -->
       <input type="text" name="DAILY_SHOUTING" placeholder="0-10" required="required">
+      <br>
       <label for="email">How sufficient is your income to cover basic life expenses?:</label>
-      <br>
       <input type="text" name="SUFFICIENT_INCOME" placeholder="1-2" required="required">
+      <br>
       <label for="email">How many recognitions have you received in your life?:</label>
-      <br>
       <input type="text" name="PERSONAL_AWARDS" placeholder="0-10" required="required">
-      <label for="email">How many hours do you spend everyday doing what you are passionate about?:</label>
       <br>
+      <label for="email">How many hours do you spend everyday doing what you are passionate about?:</label>
+      <!-- <br> -->
       <input type="text" name="TIME_FOR_PASSION" placeholder="0-10" required="required">
+      <br>
       <label for="email">In a typical week, how many times do you have the opportunity to think about
         yourself?</label>
-      <br>
+      <!-- <br> -->
       <input type="text" name="WEEKLY_MEDITATION" placeholder="0-10" required="required">
-      <label for="email">Age groups</label>
       <br>
+      <label for="email">Age groups</label>
+      <!-- <br> -->
       <input type="text" name="AGE" placeholder="21-35,36-50,GREATER THAN 50" required="required">
-      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+      <br>
+      <button type="submit" class="btn">Predict</button>
     </form>
-
-    <br>
-    <br>
-    {{ prediction_text }}
-    <br>
-    <!-- {{responsible_atribute_for_stress}} -->
-    <ul>
-      {% for fruit in responsible_atribute_for_stress %}
-      <li>{{ fruit }}</li>
-      {% endfor %}
-    </ul>
 
   </div>
 
